@@ -11,12 +11,6 @@ export class ExportadorPDF implements ExportadorFactura {
      * @returns La representación de la factura como si fuera un PDF.
      */
     public exportar(factura: Factura): string {
-      return `
-        Factura ${factura.id}
-        Emisor: ${factura.emisor}
-        Receptor: ${factura.receptor}
-        Cantidad: ${factura.cantidad}
-        Fecha de Vencimiento: ${factura.fechaVencimiento.toLocaleDateString()}
-        Estado: ${factura.estaPagada ? 'Pagada' : 'Pendiente de pago'}`;
+      return `Factura ${factura.id}\nEmisor: ${factura.emisor}\nReceptor: ${factura.receptor}\nCantidad: ${factura.cantidad}\nFecha de Vencimiento: ${factura.fechaVencimiento.toLocaleDateString()}\nEstado: ${factura.estaPagada ? 'Pagada' : 'Pendiente de pago'}`;
     }
 }
