@@ -5,6 +5,7 @@
       "./src/ejercicio-3/*.ts",
       "./src/ejercicio-4/*.ts",
       "./src/ejercicio-5/*.ts",
+      "./src/ejercicio-pe/*.ts",
     ],
     "out": "./docs"
 }
