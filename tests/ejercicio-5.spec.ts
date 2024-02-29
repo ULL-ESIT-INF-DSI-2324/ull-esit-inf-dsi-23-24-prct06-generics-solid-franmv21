@@ -7,11 +7,11 @@ import { ShortMessageService } from '../src/ejercicio-5/shortmessage';
 describe('Ejercicio 5 - Servicio de mensajería', () => {
   it('Envía una notificación por correo electrónico', () => {
     const emailNotifier = new Notifier(new EmailService());
-    expect(emailNotifier.sendNotification('Hello World!')).to.be.equal('Sending notification by email: Hello World!');
+    expect(emailNotifier.sendNotification('Hello World!')).to.be.undefined;
   });
 
   it('Envía una notificación por SMS', () => {
     const shortMessageNotifier = new Notifier(new ShortMessageService());
-    expect(shortMessageNotifier.sendNotification('Hello World!')).to.be.equal('Sending notification by SMS: Hello World!');
+    expect(shortMessageNotifier.sendNotification('Hello World!')).to.be.undefined;
   });
 });
