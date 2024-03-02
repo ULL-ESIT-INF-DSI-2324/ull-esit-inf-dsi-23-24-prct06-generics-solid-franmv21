@@ -29,7 +29,7 @@ A continuación, se ha implementando la clase `Caja`, la cual restringe su tipo,
 - `buscarEnser` para buscar un `Enser` determinado por su nombre.
 - `pesoTotal` para calcular el peso total de la caja en kilogramos.
 
-![Clase Caja](images/ej1.1.png)
+![Clase Caja](images/ej1.2.png)
 
 Por último, tenemos la clase `Mudanza`, que al igual que la clase `Caja`, restringe su tipo para que en la mudanza solo se gestionen cajas que contengan objetos que cumplan con lo establecido en la interfaz `Enser`. Esta clase también es muy sencilla. Cuenta con un *array* que representa la colección de cajas necesarias durante la mudanza y algunos métodos muy sencillos para gestionarlas, que son los siguientes:
 
@@ -39,7 +39,7 @@ Por último, tenemos la clase `Mudanza`, que al igual que la clase `Caja`, restr
 - `listarCajas` para listar todas las cajas de la colección así como su contenido, haciendo uso del método `listarEnseres` de la clase `Caja`.
 - `pesoTotalMudanza` para calcular el peso total de la mudanza mediante el peso de cada caja. Hace uso del método `pesoTotal` de la clase `Caja`.
 
-![Clase Mudanza](images/ej1.2.png)
+![Clase Mudanza](images/ej1.3.png)
 
 ### Ejercicio 2 - Facturas en diferentes formatos
 

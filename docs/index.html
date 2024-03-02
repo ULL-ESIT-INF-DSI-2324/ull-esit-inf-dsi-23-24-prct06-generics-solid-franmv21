@@ -15,7 +15,7 @@
 <li><code>buscarEnser</code> para buscar un <code>Enser</code> determinado por su nombre.</li>
 <li><code>pesoTotal</code> para calcular el peso total de la caja en kilogramos.</li>
 </ul>
-<p><img src="images/ej1.1.png" alt="Clase Caja"></p>
+<p><img src="images/ej1.2.png" alt="Clase Caja"></p>
 <p>Por último, tenemos la clase <code>Mudanza</code>, que al igual que la clase <code>Caja</code>, restringe su tipo para que en la mudanza solo se gestionen cajas que contengan objetos que cumplan con lo establecido en la interfaz <code>Enser</code>. Esta clase también es muy sencilla. Cuenta con un <em>array</em> que representa la colección de cajas necesarias durante la mudanza y algunos métodos muy sencillos para gestionarlas, que son los siguientes:</p>
 <ul>
 <li><code>agregarCaja</code> para agregar una caja a la colección.</li>
@@ -24,7 +24,7 @@
 <li><code>listarCajas</code> para listar todas las cajas de la colección así como su contenido, haciendo uso del método <code>listarEnseres</code> de la clase <code>Caja</code>.</li>
 <li><code>pesoTotalMudanza</code> para calcular el peso total de la mudanza mediante el peso de cada caja. Hace uso del método <code>pesoTotal</code> de la clase <code>Caja</code>.</li>
 </ul>
-<p><img src="images/ej1.2.png" alt="Clase Mudanza"></p>
+<p><img src="images/ej1.3.png" alt="Clase Mudanza"></p>
 <a id="md:ejercicio-2---facturas-en-diferentes-formatos" class="tsd-anchor"></a><h3><a href="#md:ejercicio-2---facturas-en-diferentes-formatos">Ejercicio 2 - Facturas en diferentes formatos</a></h3><p>El principio que se menciona en el ejercicio es el <code>Open-closed principle</code>, el cual sugiere que una clase debería estar abierta a la extensión pero no a la modificación. A continuación, veremos como se ha llevado a cabo el ejercicio para poder cumplir con este y con los demás principios.</p>
 <p>En primer lugar, para poder añadir nuevos formatos de generación de facturas sin modificar el código implementado, se ha creado la interfaz <code>ExportadorFactura</code>, la cual cuenta con un método que recibe una <code>Factura</code> como argumento, y devuelve una representación de dicha factura en formato <code>string</code>.</p>
 <p>La interfaz <code>Factura</code>, se ha creado para especificar la estructura de información que debe tener una factura.</p>
