@@ -27,4 +27,4 @@ export class FileManager {
     write(data: string): void {
       this.writer.writeFile(data);
     }
-  }
+}

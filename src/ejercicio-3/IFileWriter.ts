@@ -7,4 +7,4 @@ export interface IFileWriter {
      * @param data Los datos a escribir en el archivo.
      */
     writeFile(data: string): void;
-  }
+}

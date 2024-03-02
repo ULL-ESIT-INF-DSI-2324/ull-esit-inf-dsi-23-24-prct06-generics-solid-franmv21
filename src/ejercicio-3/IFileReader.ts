@@ -7,4 +7,4 @@ export interface IFileReader {
      * @returns El contenido del archivo como una cadena de texto.
      */
     readFile(): string;
-  }
+}
